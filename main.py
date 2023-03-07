@@ -1,3 +1,4 @@
+# Karl Paju IS22
 import pygame
 
 # Käivita pygame
@@ -68,7 +69,7 @@ def game_over():
     pygame.quit()  # Sulgeme akna
     exit()  # sulgeme akna
 
-
+0
 # Alusta mängu loop-i
 while True:
     # sündmustega tegelemine
@@ -126,3 +127,4 @@ while True:
 
     # Sätime fpsi
     pygame.time.Clock().tick(120)  # Määrasime ekraani fpsiks 120
+
