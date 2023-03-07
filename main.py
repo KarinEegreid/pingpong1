@@ -1,4 +1,5 @@
 # Karl Paju IS22
+
 import pygame
 
 # Käivita pygame
@@ -21,19 +22,14 @@ ball_x = screen_width / 2 - ball_image.get_width() / 2  # Määrame palli x telj
 ball_y = platform_y - ball_image.get_height()  # Määrame palli y telje algasukoha.
 
 # Määrame palli algne kiirus
-ball_speed_x = 5  # Määrame palli x telje kiiruseks 5
-ball_speed_y = -5  # Määrame palli y telje kiiruseks 5
+ball_speed_x = 2  # Määrame palli x telje kiiruseks 5
+ball_speed_y = -2  # Määrame palli y telje kiiruseks 5
 
 # Määra platvormi kiirus
 platform_speed = 10  # Määrame platvormi kiiruseks 10
 
 # Määra algne skoor
-global score
-score = 0  # Määrame kasutaja algseks skooris 0
-
-# Lahutame skoorilt 1 kui põrkab vastu seina
-global deduct_score
-score >= -1
+score = 0
 
 # Määra fondi suurus skoori kuvamiseks
 font = pygame.font.SysFont(None, 36)  # Määrame fondi suuruseks 36 ning jätame sellele tavapärase pygame fondi.
@@ -127,4 +123,5 @@ while True:
 
     # Sätime fpsi
     pygame.time.Clock().tick(120)  # Määrasime ekraani fpsiks 120
+
 
