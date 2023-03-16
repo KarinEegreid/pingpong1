@@ -65,7 +65,6 @@ def game_over():
     pygame.quit()  # Sulgeme akna
     exit()  # sulgeme akna
 
-0
 # Alusta mängu loop-i
 while True:
     # sündmustega tegelemine
@@ -100,11 +99,11 @@ while True:
         game_over()
 
     # Kontrollime kas pall läheb platformi vastu
-    if ball_y + ball_image.get_height() > platform_y and \
-            ball_x + ball_image.get_width() > platform_x and \
-            ball_x < platform_x + platform_image.get_width():
-        ball_speed_y = -ball_speed_y
-        score += 1
+    if ball_y + ball_image.get_height() > platform_y and \ # Kui palli y asukoht ning palli kõrgus on väiksem kui platvorm y asukohas
+            ball_x + ball_image.get_width() > platform_x and \ # ja kui palli x asukoht ja palli laius on väiksem kui platvorm x asukohas
+            ball_x < platform_x + platform_image.get_width(): # kui palli x asukoht on väiksem kui platvormi x asukoht ning platvormi laius
+        ball_speed_y = -ball_speed_y # siis palli kiirus muutub vastanduseks
+        score += 1 # tuleb üks punkt juurde
 
 
     # Täiendame ekraani
